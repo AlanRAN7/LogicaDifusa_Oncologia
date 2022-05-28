@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #224580;
+}
+
+.container-questions{
+    width: 80vw;
+    height: 90vh;
+    background-color: #eee;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
