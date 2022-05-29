@@ -19,6 +19,7 @@ function resultScreenAndSaveData(){
     let dificultad_respirar = document.getElementById("dificultad-respirar").value;
     let orina = document.getElementById("orina").value;
     let tos_constante = document.getElementById("tos-constante").value;
+    let calif_sintomas = [fiebre, nauseas, vomito, cansancio, peso_perdido, bulto_cuerpo, poco_apetito, sudor_nocturno, dolor_abdominal, globulos_rojos, hinchazon_hueso, dolor_cuerpo, higado_agrandado, dificultad_respirar, orina, tos_constante]
     localStorage.setItem("fiebre", fiebre)
     localStorage.setItem("nauseas", nauseas)
     localStorage.setItem("vomito", vomito)
@@ -35,5 +36,6 @@ function resultScreenAndSaveData(){
     localStorage.setItem("dificultad_respirar", dificultad_respirar)
     localStorage.setItem("orina", orina)
     localStorage.setItem("tos_constante", tos_constante)
+    localStorage.setItem("calif_sintomas", calif_sintomas)
     window.location.href = "../pages/result.html"
 }
