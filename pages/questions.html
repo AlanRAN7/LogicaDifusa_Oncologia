@@ -1,149 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diagnóstico Enfermedades Oncológicas</title>
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Estilos -->
-    <link rel="stylesheet" href="../css/questions.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/questions.css" />
+  </head>
+  <body>
     <div class="container-questions">
+      <div class="title-container">
+        <h2>Diagnostico General</h2>
+      </div>
+      <div class="form-container">
         <h3>1.- ¿Tiene fiebre?</h3>
         <select name="" id="fiebre">
-            <option value="0" selected>No presento fiebre</option>
-            <option value="0.2">Muy poca fiebre</option>
-            <option value="0.4">Poca fiebre</option>
-            <option value="0.6">Fiebre moderada</option>
-            <option value="0.8">Fiebre moderadamente alta</option>
-            <option value="1">Mucha fiebre</option>
+          <option value="0" selected>No presento fiebre</option>
+          <option value="0.2">Muy poca fiebre</option>
+          <option value="0.4">Poca fiebre</option>
+          <option value="0.6">Fiebre moderada</option>
+          <option value="0.8">Fiebre moderadamente alta</option>
+          <option value="1">Mucha fiebre</option>
         </select>
         <h3>2.- ¿Tiene náuseas?</h3>
         <select name="" id="nauseas">
-            <option value="0" selected>No presento nauseas</option>
-            <option value="0.2">Muy poca nauseas</option>
-            <option value="0.4">Poca nauseas</option>
-            <option value="0.6">Nauseas moderada</option>
-            <option value="0.8">Nauseas moderadamente alta</option>
-            <option value="1">Muchas nauseas</option>
+          <option value="0" selected>No presento nauseas</option>
+          <option value="0.2">Muy poca nauseas</option>
+          <option value="0.4">Poca nauseas</option>
+          <option value="0.6">Nauseas moderada</option>
+          <option value="0.8">Nauseas moderadamente alta</option>
+          <option value="1">Muchas nauseas</option>
         </select>
         <h3>3.- ¿Ha vomitado recientemente?</h3>
         <select name="" id="vomito">
-            <option value="0" selected>No</option>
-            <option value="0.2">He vomitado muy poco, principalmente eran náuseas</option>
-            <option value="0.4">He vomitado poco</option>
-            <option value="0.6">He vomitado moderadamente</option>
-            <option value="0.8">He vomitado mucho al grado de sentirme decaido</option>
-            <option value="1">He vomitado sangre</option>
+          <option value="0" selected>No</option>
+          <option value="0.2">
+            He vomitado muy poco, principalmente eran náuseas
+          </option>
+          <option value="0.4">He vomitado poco</option>
+          <option value="0.6">He vomitado moderadamente</option>
+          <option value="0.8">
+            He vomitado mucho al grado de sentirme decaido
+          </option>
+          <option value="1">He vomitado sangre</option>
         </select>
         <h3>4.- ¿Se ha sentido cansado?</h3>
         <select name="" id="cansancio">
-            <option value="0" selected>De momento no</option>
-            <option value="0.2">Muy poco cansancio</option>
-            <option value="0.4">Poco cansancio</option>
-            <option value="0.6">Cansancio moderado</option>
-            <option value="0.8">Cansancio moderadamente alta</option>
-            <option value="1">Mucho cansancio</option>
+          <option value="0" selected>De momento no</option>
+          <option value="0.2">Muy poco cansancio</option>
+          <option value="0.4">Poco cansancio</option>
+          <option value="0.6">Cansancio moderado</option>
+          <option value="0.8">Cansancio moderadamente alta</option>
+          <option value="1">Mucho cansancio</option>
         </select>
-        <h3>5.- ¿Ha perdido peso recientemente sin la necesidad de ir a un gimnasio?</h3>
+        <h3>
+          5.- ¿Ha perdido peso recientemente sin la necesidad de ir a un
+          gimnasio?
+        </h3>
         <select name="" id="peso-perdido">
-            <option value="0" selected>No</option>
-            <option value="0.2">Muy poco peso perdido</option>
-            <option value="0.4">Poco peso perdido</option>
-            <option value="0.6">Peso perdido moderado, lo casual por dietas</option>
-            <option value="0.8">Peso perdido moderadamente alta</option>
-            <option value="1">Mucho peso perdido</option>
+          <option value="0" selected>No</option>
+          <option value="0.2">Muy poco peso perdido</option>
+          <option value="0.4">Poco peso perdido</option>
+          <option value="0.6">
+            Peso perdido moderado, lo casual por dietas
+          </option>
+          <option value="0.8">Peso perdido moderadamente alta</option>
+          <option value="1">Mucho peso perdido</option>
         </select>
-        <h3>6.- ¿Ha sentido algún bulto, protuberancia o hinchazón en un lugar específico del cuerpo?</h3>
+        <h3>
+          6.- ¿Ha sentido algún bulto, protuberancia o hinchazón en un lugar
+          específico del cuerpo?
+        </h3>
         <select name="" id="bulto-cuerpo">
-            <option value="0" selected>Ninguno</option>
-            <option value="0.8">Siento un hinchazón en una zona de mi cuerpo</option>
-            <option value="1">Siento varios bultos ubicados en una zona en especifico</option>
+          <option value="0" selected>Ninguno</option>
+          <option value="0.8">
+            Siento un hinchazón en una zona de mi cuerpo
+          </option>
+          <option value="1">
+            Siento varios bultos ubicados en una zona en especifico
+          </option>
         </select>
         <h3>7.- ¿Ha sentido poco apetito?</h3>
         <select name="" id="poco-apetito">
-            <option value="0" selected>No, todo normal</option>
-            <option value="0.2">Raras veces tengo poco apetito</option>
-            <option value="0.4">A veces tengo poco apetito</option>
-            <option value="0.6">Poco apetito de manera moderada</option>
-            <option value="0.8">Poco apetito casualmente</option>
-            <option value="1">Últimamente no he tenido mucho apetito</option>
+          <option value="0" selected>No, todo normal</option>
+          <option value="0.2">Raras veces tengo poco apetito</option>
+          <option value="0.4">A veces tengo poco apetito</option>
+          <option value="0.6">Poco apetito de manera moderada</option>
+          <option value="0.8">Poco apetito casualmente</option>
+          <option value="1">Últimamente no he tenido mucho apetito</option>
         </select>
         <h3>8.- ¿Ha tenido sudores nocturnos?</h3>
         <select name="" id="sudor-nocturno">
-            <option value="0" selected>No</option>
-            <option value="0.2">Raras veces tengo sudores nocturnos</option>
-            <option value="0.4">A veces tengo sudores nocturnos</option>
-            <option value="0.6">Sudores nocturnos de manera moderada</option>
-            <option value="0.8">Sudores nocturnos casualmente</option>
-            <option value="1">Últimamente he tenido sudores nocturnos insoportables</option>
+          <option value="0" selected>No</option>
+          <option value="0.2">Raras veces tengo sudores nocturnos</option>
+          <option value="0.4">A veces tengo sudores nocturnos</option>
+          <option value="0.6">Sudores nocturnos de manera moderada</option>
+          <option value="0.8">Sudores nocturnos casualmente</option>
+          <option value="1">
+            Últimamente he tenido sudores nocturnos insoportables
+          </option>
         </select>
         <h3>9.- ¿Ha tenido dolores abdominales?</h3>
         <select name="" id="dolor-abdominal">
-            <option value="0" selected>Ningún dolor</option>
-            <option value="0.2">Raras veces tengo dolores abdominales</option>
-            <option value="0.4">A veces tengo dolores abdominales</option>
-            <option value="0.6">Dolores abdominales de manera moderada</option>
-            <option value="0.8">Dolores abdominales casualmente</option>
-            <option value="1">Últimamente he tenido dolores abdominales insoportables</option>
+          <option value="0" selected>Ningún dolor</option>
+          <option value="0.2">Raras veces tengo dolores abdominales</option>
+          <option value="0.4">A veces tengo dolores abdominales</option>
+          <option value="0.6">Dolores abdominales de manera moderada</option>
+          <option value="0.8">Dolores abdominales casualmente</option>
+          <option value="1">
+            Últimamente he tenido dolores abdominales insoportables
+          </option>
         </select>
         <h3>10.- ¿Tiene niveles altos o bajos de glóbulos rojos?</h3>
         <select name="" id="globulos-rojos">
-            <option value="0" selected>No lo sé || Estoy normal en ello</option>
-            <option value="0.6">Globulos con niveles altos</option>
-            <option value="1">Globulos con niveles bajos</option>
+          <option value="0" selected>No lo sé || Estoy normal en ello</option>
+          <option value="0.6">Globulos con niveles altos</option>
+          <option value="1">Globulos con niveles bajos</option>
         </select>
         <h3>11.- ¿Tiene alguna hinchazón o fractura en algún hueso?</h3>
         <select name="" id="hinchazon-hueso">
-            <option value="0" selected>No sé || Ninguna de las 2</option>
-            <option value="1">Sí, siento una de las 2 o las 2 en uno de mis huesos</option>
+          <option value="0" selected>No sé || Ninguna de las 2</option>
+          <option value="1">
+            Sí, siento una de las 2 o las 2 en uno de mis huesos
+          </option>
         </select>
-                <h3>12.- ¿Ha tenido algún dolor en alguna zona del cuerpo (oído, huesos o cuello [ajena al abdomen])?</h3>
+        <h3>
+          12.- ¿Ha tenido algún dolor en alguna zona del cuerpo (oído, huesos o
+          cuello [ajena al abdomen])?
+        </h3>
         <select name="" id="dolor-cuerpo">
-            <option value="0" selected>Ningún dolor</option>
-            <option value="0.2">Raras veces tengo dolores en alguna zona de mi cuerpo</option>
-            <option value="0.4">A veces tengo dolores en alguna zona de mi cuerpo</option>
-            <option value="0.6">Tengo dolores en alguna zona de mi cuerpo de manera moderada</option>
-            <option value="0.8">Tengo dolores en alguna zona de mi cuerpo casualmente</option>
-            <option value="1">Últimamente he tenido dolores en alguna zona de mi cuerpo</option>
+          <option value="0" selected>Ningún dolor</option>
+          <option value="0.2">
+            Raras veces tengo dolores en alguna zona de mi cuerpo
+          </option>
+          <option value="0.4">
+            A veces tengo dolores en alguna zona de mi cuerpo
+          </option>
+          <option value="0.6">
+            Tengo dolores en alguna zona de mi cuerpo de manera moderada
+          </option>
+          <option value="0.8">
+            Tengo dolores en alguna zona de mi cuerpo casualmente
+          </option>
+          <option value="1">
+            Últimamente he tenido dolores en alguna zona de mi cuerpo
+          </option>
         </select>
         <h3>13.- ¿Siente su higado agrandado (pd: se requiere estudio)?</h3>
         <select name="" id="higado-agrandado">
-            <option value="0" selected>No lo sé || No lo tengo agrandado</option>
-            <option value="1">Sí lo siento agrandado || Sí lo tengo agrandado</option>
+          <option value="0" selected>No lo sé || No lo tengo agrandado</option>
+          <option value="1">
+            Sí lo siento agrandado || Sí lo tengo agrandado
+          </option>
         </select>
         <h3>14.- ¿Tiene dificultades para respirar?</h3>
         <select name="" id="dificultad-respirar">
-            <option value="0" selected>Ninguna dificultad</option>
-            <option value="0.2">Raras veces dificultades para respirar</option>
-            <option value="0.4">A veces tengo dificultades para respirar</option>
-            <option value="0.6">Dificultades para respirar de manera moderada</option>
-            <option value="0.8">Dificultades para respirar casualmente</option>
-            <option value="1">Últimamente he tenido dificultades para respirar de manera constante</option>
+          <option value="0" selected>Ninguna dificultad</option>
+          <option value="0.2">Raras veces dificultades para respirar</option>
+          <option value="0.4">A veces tengo dificultades para respirar</option>
+          <option value="0.6">
+            Dificultades para respirar de manera moderada
+          </option>
+          <option value="0.8">Dificultades para respirar casualmente</option>
+          <option value="1">
+            Últimamente he tenido dificultades para respirar de manera constante
+          </option>
         </select>
         <h3>15.- ¿Ha orinado con sangre o de manera oscura?</h3>
         <select name="" id="orina">
-            <option value="0" selected>No he visto mi orina</option>
-            <option value="0.6">Orina oscura</option>
-            <option value="1">Orina con sangre</option>
+          <option value="0" selected>No he visto mi orina</option>
+          <option value="0.6">Orina oscura</option>
+          <option value="1">Orina con sangre</option>
         </select>
         <h3>16.- ¿Ha tenido tos constante?</h3>
         <select name="" id="tos-constante">
-            <option value="0" selected>Ningún tipo de tos</option>
-            <option value="0.2">Raras veces tengo tos</option>
-            <option value="0.4">A veces tengo tos</option>
-            <option value="0.6">Toso de manera moderada</option>
-            <option value="0.8">Toso casualmente</option>
-            <option value="1">Últimamente he tocido de manera constante</option>
+          <option value="0" selected>Ningún tipo de tos</option>
+          <option value="0.2">Raras veces tengo tos</option>
+          <option value="0.4">A veces tengo tos</option>
+          <option value="0.6">Toso de manera moderada</option>
+          <option value="0.8">Toso casualmente</option>
+          <option value="1">Últimamente he tocido de manera constante</option>
         </select>
-        <button class = "btn-menuPrincipal" onclick="goToMain()">Menú Principal</button>
-        <button class = "btn-resultado" onclick="resultScreenAndSaveData()">Ver resultado</button>
+        <br />
+      </div>
+      <div class="btn-container">
+        <button class="btn-menuPrincipal" onclick="goToMain()">
+          Menú Principal
+        </button>
+        <button class="btn-resultado" onclick="resultScreenAndSaveData()">
+          Ver resultado
+        </button>
+      </div>
     </div>
     <script src="../js/answersSave.js"></script>
-</body>
+  </body>
 </html>

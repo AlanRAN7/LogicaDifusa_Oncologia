@@ -7,16 +7,88 @@ html{
 }
 body{
     background-color: #224580;
+    height: 1300px;
+
 }
 
 .container-questions{
     width: 80vw;
-    height: 90vh;
+    height: 1200px;
     background-color: #eee;
     position: absolute;
-	top:0;
+	top: 700px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+.title-container{
+width: 100%;
+height: 50px;
+/* background-color: pink; */
+
+
+}
+
+h2{
+    /* display: block; */
+    font-weight: 500;
+    text-align:center;
+    margin: 5%;
+
+}
+
+.form-container{
+margin: 20px 20px 20px 20px;
+
+}
+
+h3{
+    font-weight: 300;
+}
+select {
+    margin-bottom: 5px;
+    margin-left: 1%;
+   background: transparent;
+   border: 1px solid #bdc3c7;
+    border-radius: 5px 5px 5px 5px;
+   font-size: 14px;
+   height: 30px;
+   padding: 5px;
+   width: 95%;
+}
+
+select:focus{
+    outline: none;
+}
+
+.btn-container{
+    margin-top: 30px;
+    margin-left: 3.5%;
+    width: 90%;
+    height: 50px;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    border-radius: 7.5px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-menuPrincipal{
+    margin-right: 10px;
+    border-style: solid !important; 
+    border-color: #224580;
+    color: #224580;
+}
+
+.btn-resultado{
+background-color: #224580;
+color: white;
 }
