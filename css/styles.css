@@ -39,14 +39,25 @@ main {
   font-weight: 300;
   margin-bottom: 10px;
 }
+.btn-container{
+  width: 500px;
+  /* background-color: pink; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-start {
-  width: 300px;
-  height: 60px;
-  margin-top: 60px;
+  width: 225px;
+  height: 50px;
+  /* margin-top: 60px; */
   background-color: #224580;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 .btn-start a {
   color: white;
@@ -55,6 +66,8 @@ main {
   display: flex;
   justify-content: center;
 }
+
+
 .section-image {
   width: 50%;
   height: 100vh;
