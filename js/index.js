@@ -133,5 +133,5 @@ function getCanceresSeleccionados(){
 
     localStorage.setItem('flag', 'true');
     localStorage.setItem('canceresSeleccionados', canceresSeleccionados);
-    window.location.href = 'preguntas.html';
+    window.location.href = '../pages/questions.html';
 }
