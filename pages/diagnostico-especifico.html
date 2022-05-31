@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnostico específico</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnóstico Enfermedades Oncológicas</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/questions.css" />
+    <link rel="stylesheet" href="../css/diagnostico-especifico.css" />
+  </head>
+  <body>
+    <div class="container-questions container-especifico">
+        <div class="title-container">
+            <h2>Diagnostico Específico</h2>
+            <p class = "p-subtitle">Seleccione al menos 2 enfermedades:</p>
+          </div>
+          <div class="listadoEnfermedades">
+              <input type="checkbox" name="canceres" id="C1" value = "">
+              <label for="C1">Linfoma de Hodgkin y Linfoma de Hodgkin no Hodgkiniano</label>
+              <br>
+              <input type="checkbox" name="canceres" id="C2" value = "">
+              <label for="C2">Cáncer de Estómago</label>              
+              <br>
+              <input type="checkbox" name="canceres" id="C3" value = "">
+              <label for="C3">Cáncer de Pulmón</label>              
+              <br>
+              <input type="checkbox" name="canceres" id="C4" value = "">
+              <label for="C4">Cáncer de Hígado</label>              
+              <br>
+              <input type="checkbox" name="canceres" id="C5" value = "">
+              <label for="C5">Cáncer de Páncreas</label>              
+              <br>
+              <input type="checkbox" name="canceres" id="C6" value = "">
+              <label for="C6">Cáncer de Hueso</label>             
+              <br>
+              <input type="checkbox" name="canceres" id="C7" value = "">
+              <label for="C7">Leucemia</label>             
+              <br>
+              <input type="checkbox" name="canceres" id="C8" value = "">
+              <label for="C8">Cáncer de Riñón</label>            
+              <br>
+              <input type="checkbox" name="canceres" id="C9" value = "">
+              <label for="C9">Cáncer de Tiroides</label>        
+              <br>
+              <input type="checkbox" name="canceres" id="C10" value = "">
+              <label for="C10">Cáncer de Laringe y de Hipofaringe</label>     
+          </div>
+          <br><br>
+        <div class="btn-container">
+            <button class="btn-menuPrincipal" onclick="goToMain()">
+              Menú Principal
+            </button>
+            <button class="btn-resultado" onclick="getCanceresSeleccionados()">
+              Siguiente
+            </button>
+          </div>
+      </div>
+     
+    </div>
+    <script src="../js/answersSave.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
 </html>

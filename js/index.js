@@ -117,3 +117,21 @@ function diagnostico(data, sintomasUsuario) {
     }
     return answer;
 }
+
+function getCanceresSeleccionados(){
+    const arrayCancer = document.getElementsByName("canceres");
+    let canceresSeleccionados = [];
+    for(let i = 0; i < arrayCancer.length; i++) {
+        if(arrayCancer[i].checked) {
+            canceresSeleccionados.push(arrayCancer[i].value);
+        }
+    }
+
+    if(canceresSeleccionados.length === 1){
+        return alert('NOTA: Seleccione al menos 2 canceres diferentes');
+    }
+
+    localStorage.setItem('flag', 'true');
+    localStorage.setItem('canceresSeleccionados', canceresSeleccionados);
+    window.location.href = 'preguntas.html';
+}

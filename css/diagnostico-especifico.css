@@ -1,0 +1,35 @@
+body{
+    height: 400px;
+}
+.p-subtitle{
+    /* margin-left: 25px; */
+    font-weight: 300;
+    text-align: center;
+    margin-top: -55px;
+    width: 100%;
+    /* background-color: red; */
+}
+.container-especifico{
+    top: 0px;
+    height: 450px;
+}
+
+.listadoEnfermedades{
+    margin-top: 35px;
+}
+
+input{
+    margin-left: 20px;
+    width: 15px;
+    height: 15px;
+}
+label{
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+    .p-subtitle{
+        margin-top: -25px;
+    }
+    
+  }
