@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 html{
     font-family: 'Roboto', sans-serif;
@@ -8,30 +9,24 @@ html{
 body{
     background-color: #224580;
     height: 1300px;
-
 }
-
+main {
+    width: 100vw;
+    height: 1800px;
+}
 .container-questions{
-    width: 80vw;
-    height: 1200px;
+    width: 80%;
+    height: 95%;
     background-color: #eee;
-    position: absolute;
-	top: 700px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+	margin: 80px auto;
+    padding: 2% 8%;
 }
 .title-container{
-width: 100%;
-height: 50px;
-/* background-color: pink; */
-
-
+    width: 100%;   
+    height: 50px;
 }
 
 h2{
-    /* display: block; */
     font-weight: 500;
     text-align:center;
     margin: 5%;
@@ -39,27 +34,27 @@ h2{
 }
 
 .form-container{
-margin: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+}
+.form-container select {
+    margin-bottom: 28px;
+    margin-left: 1%;
+    background: transparent;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 95%;
+}
 
+.form-container select:focus{
+    outline: none;
 }
 
 h3{
     font-weight: 300;
-}
-select {
-    margin-bottom: 5px;
-    margin-left: 1%;
-   background: transparent;
-   border: 1px solid #bdc3c7;
-    border-radius: 5px 5px 5px 5px;
-   font-size: 14px;
-   height: 30px;
-   padding: 5px;
-   width: 95%;
-}
-
-select:focus{
-    outline: none;
+    margin-bottom: 10px;
 }
 
 .btn-container{

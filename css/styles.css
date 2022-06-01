@@ -41,7 +41,7 @@ main {
 }
 .btn-container{
   width: 500px;
-  /* background-color: pink; */
+  margin-top: 50px;
   flex-direction: row;
   justify-content: center;
   align-items: center;

@@ -1,16 +1,12 @@
-body{
-    height: 400px;
+.title-container h2 {
+    margin: 3% 0 1% 0;
 }
 .p-subtitle{
-    /* margin-left: 25px; */
     font-weight: 300;
     text-align: center;
-    margin-top: -55px;
     width: 100%;
-    /* background-color: red; */
 }
 .container-especifico{
-    top: 0px;
     height: 450px;
 }
 
@@ -30,6 +26,5 @@ label{
 @media only screen and (max-width: 768px) {
     .p-subtitle{
         margin-top: -25px;
-    }
-    
-  }
+    }    
+}
