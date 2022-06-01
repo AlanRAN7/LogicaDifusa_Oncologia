@@ -32,7 +32,7 @@ h2{
     text-align:center;
     margin: 5%;
 }
-.estado{
+.diagnostico{
     margin-left: 16%;
     width: 800px;
     height: 30px;
@@ -42,7 +42,7 @@ h2{
 margin: 20px 20px 20px 20px;
 }
 
-.resultado{
+.recomendaciones{
     margin-left: 15%;
     margin-top: 10%;
     width: 800px;

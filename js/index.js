@@ -80,12 +80,12 @@ const C10 = {
 }
 
 const arregloEnfermedades = [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10];
-const sintomasUsuario = localStorage.getItem(calif_sintomas);
+var sintomasUsuario = localStorage.getItem('calif_sintomas');
 console.log(sintomasUsuario)
 const umbral = 0.4;
 
 // Método max-min para obtener el índice del arreglo de enfermedades
-function diagnostico(data, sintomasUsuario) {
+function diagnosticoEspecifico(data, sintomasUsuario) {
     let [aux, res] = [[], []];
     let answer = {};
 

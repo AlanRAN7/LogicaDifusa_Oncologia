@@ -2,7 +2,7 @@ function goToMain(){
     window.location.href = "../index.html"
 }
 
-function resultScreenAndSaveData(){
+function saveDataUser(){
     let fiebre = document.getElementById("fiebre").value;
     let nauseas = document.getElementById("nauseas").value;
     let vomito = document.getElementById("vomito").value;
@@ -37,5 +37,9 @@ function resultScreenAndSaveData(){
     localStorage.setItem("orina", orina)
     localStorage.setItem("tos_constante", tos_constante)
     localStorage.setItem("calif_sintomas", calif_sintomas)
+    // window.location.href = "../pages/result.html"
+}
+function resultScreen() {
+    saveDataUser();
     window.location.href = "../pages/result.html"
 }
