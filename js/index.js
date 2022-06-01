@@ -131,7 +131,7 @@ function getCanceresSeleccionados(){
         return alert('NOTA: Seleccione al menos 2 canceres diferentes');
     }
 
-    localStorage.setItem('flag', 'true');
+    localStorage.setItem('isSpecific', 'true');
     localStorage.setItem('canceresSeleccionados', canceresSeleccionados);
     window.location.href = '../pages/questions.html';
 }
