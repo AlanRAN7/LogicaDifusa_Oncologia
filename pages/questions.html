@@ -12,7 +12,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/questions.css" />
   </head>
-  <body>
+  <body onload = "noBack();">
     <main>
       <div class="container-questions">
         <div class="title-container">
@@ -193,14 +193,14 @@
           <button class="btn-menuPrincipal" onclick="goToMain()">
             Menú Principal
           </button>
-          <button class="btn-resultado" onclick="resultScreen()">
+          <button class="btn-resultado" onclick="saveDataUser()">
             Ver resultado
           </button>
         </div>
       </div>
     </main>
-    <script src="../js/answersSave.js"></script>
     <script src="../js/index.js"></script>
-    <script src="../js/result.js"></script>
+    <script src="../js/answersSave.js"></script>
+    <script src="../js/results.js"></script>
   </body>
 </html>

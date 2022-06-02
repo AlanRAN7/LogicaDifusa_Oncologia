@@ -13,21 +13,20 @@
     <link rel="stylesheet" href="../css/result.css" />
     <title>Resultados</title>
 </head>
-<body>
+<body onload = "noBack();results();">
     <div class="container-result">
         <div class="title-container">
             <h2 id="titulo">Ninguna enfermedad</h2>
-            <h3 class="diagnostico">Felicidades vas a vivir</h3>
+            <h3 class="diagnostico" id ="diagnostico">Felicidades vas a vivir</h3>
         </div>
         <div class="form-container">
-            <p class="recomendaciones">No tienes nada grave</p>
+            <p class="recomendaciones" id = "recomendaciones">No tienes nada grave</p>
         </div>
         <div class="btn-container">
             <button class="btn-Finalizar" onclick="location.href='../index.html'">Finalizar</button>
         </div>
     </div>
-    <script src="../js/answersSave.js"></script>
-    <script src="../js/index.js"></script>
     <script src="../js/results.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
