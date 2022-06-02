@@ -26,28 +26,50 @@ var C4 = {
     causa: `El cáncer de hígado ocurre cuando las células hepáticas desarrollan cambios (mutaciones) en su ADN. El ADN de una célula es el material que proporciona instrucciones para cada proceso químico en el cuerpo. Las mutaciones del ADN causan cambios en estas instrucciones. Un resultado es que las células pueden comenzar a crecer fuera de control y con el tiempo pueden formar un tumor, es decir, una masa de células cancerosas.
 
     Algunas veces se conoce la causa del cáncer de hígado, como en el caso de las infecciones crónicas por hepatitis. Pero a veces el cáncer de hígado ocurre en personas sin enfermedades preexistentes y no está claro qué lo causa.`,
-    recomendaciones: `Consulte a su medico lo más pronto posible`,
+    recomendaciones: `En caso de tener algunos de estos síntomas consulte primero a un médico para confirmar el diagnóstico.
+    Los tipos de tratamiento para el cáncer de hígado incluyen:
+    Cirugía para el cáncer de hígado
+    Ablación para el cáncer de hígado
+    Terapia de embolización para el cáncer de hígado
+    Inmunoterapia para el cáncer de hígado
+    `,
     sintomasArray: [0, 0.4, 0.6, 0, 0.8, 1, 1, 0, 0.6, 0.6, 0, 0, 0, 0, 0, 0]
 }
 
 var C5 = {
     name: `Cáncer de páncreas`,
     causa: `No está claro qué causa el cáncer de páncreas. Los médicos han identificado algunos factores que pueden aumentar el riesgo de padecer este tipo de cáncer, incluido fumar y padecer ciertas mutaciones genéticas heredadas.`,
-    recomendaciones: `Consulte a su medico lo más pronto posible`,
+    recomendaciones: `En caso de tener algunos de estos síntomas consulte primero a un médico para confirmar el diagnóstico.
+    Según el tipo y la etapa del cáncer y otros factores, las opciones de tratamiento para las personas con cáncer de páncreas pueden incluir:
+    Cirugía para el cáncer de páncreas
+    Tratamientos de ablación o embolización para el cáncer de páncreas
+    Quimioterapia para el cáncer de páncreas
+    `,
     sintomasArray: [0.8, 0.6, 0.6, 0.6, 0.6, 0, 0.4, 0.6, 0.8, 0, 0, 0.6, 0, 0, 0.4, 0]
 }
 
 var C6 = {
     name: `Cáncer de hueso`,
     causa: `Se desconoce la causa de la mayoría de los casos de cáncer de hueso. Un pequeño porcentaje de los casos de cáncer de hueso se ha relacionado con factores hereditarios, mientras que otros se relacionan con una exposición anterior a la radiación.`,
-    recomendaciones: `Consulte a su medico lo más pronto posible`,
+    recomendaciones: `En caso de tener algunos de estos síntomas consulte primero a un médico para confirmar el diagnóstico.
+    Las principales formas de tratar el cáncer de hueso son:
+    Cirugía para el cáncer de hueso
+    Radioterapia para el cáncer de hueso
+    Quimioterapia para el cáncer de hueso
+    Terapia dirigida para el cáncer de hueso
+    `,
     sintomasArray: [0.6, 0, 0, 0.5, 0.4, 0.8, 0, 0, 0, 0, 1, 0.8, 0, 0, 0, 0]
 }
 
 var C7 = {
     name: `Leucemia`,
     causa: `Las causas de la leucemia aún no se conocen. Sin embargo, se han identificado varios factores que pueden aumentar el riesgo Entre ellos: Tener antecedentes familiares de leucemia; Fumar, lo que aumenta el riesgo de desarrollar leucemia mieloide aguda (LMA); Trastornos genéticos como el síndrome de Down; Trastornos de la sangre, como el síndrome mielodisplásico, que a veces se denomina “preleucemia”; Tratamiento previo para el cáncer con quimioterapia o radiación; Exposición a altos niveles de radiación; Exposición a químicos como el benceno`,
-    recomendaciones: `Consulte a su medico lo más pronto posible`,
+    recomendaciones: `Un hematólogo oncólogo suele tratar la leucemia. Es un médico que se especializa en trastornos sanguíneos y cáncer. El tratamiento depende del tipo y etapa del cáncer. Algunas formas de leucemia avanzan lentamente y no necesitan tratamiento inmediato. Sin embargo, el tratamiento de la leucemia suele incluir uno o más de los siguientes: 
+
+    La quimioterapia usa medicamentos para matar las células leucémicas. Dependiendo del tipo de leucemia, se puede tomar un solo medicamento o una combinación de diferentes medicamentos. 
+    La radioterapia utiliza radiación de alta energía para dañar las células leucémicas y prevenir su crecimiento. La radiación se puede aplicar en un área específica o en todo el cuerpo. 
+    La terapia dirigida utiliza medicamentos que aprovechan las vulnerabilidades de las células cancerosas. Por ejemplo, el imatinib (Gleevec) es un medicamento dirigido que se usa comúnmente contra la LMC.
+    `,
     sintomasArray: [0.8, 0, 0, 0, 0.8, 0.6, 0, 0.5, 0, 0, 0, 0.6, 1, 0, 0, 0]
 }
 
@@ -55,7 +77,7 @@ var C8 = {
     name: `Cáncer de Riñón`,
     causa: `No está claro qué causa la mayoría de los tipos de cáncer renal. 
     Los médicos saben que el cáncer de riñón comienza cuando algunas células del riñón desarrollan cambios (mutaciones) en su ADN. El ADN de una célula contiene las instrucciones que le dicen a una célula qué hacer. Los cambios les indican a las células que crezcan y se dividan rápidamente. La acumulación de células anormales crea un tumor que puede extenderse más allá del riñón. Algunas células pueden desprenderse y esparcirse (hacer metástasis) hacia partes distantes del cuerpo.`,
-    recomendaciones: `Consulte a su medico lo más pronto posible`,
+    recomendaciones: `Las opciones de tratamiento para el cáncer de riñón dependen de la ubicación del tumor, el grado al cual el tumor está afectando las funciones renales y del historial de salud del paciente.  Algunas opciones de tratamiento incluyen la quimioterapia, radioterapia, cirugía y la terapia biológica.`,
     sintomasArray: [0.6, 0, 0, 0.8, 0.6, 0, 0.6, 0, 0, 0, 0, 0.8, 0, 0 , 1, 0]
 }
 
@@ -64,7 +86,11 @@ var C9 = {
     causa: `El cáncer de tiroides está asociado con varias afecciones hereditarias, aunque no se conoce aún la causa exacta de la mayoría de los cánceres de tiroides. 
 
     Ciertos cambios en el ADN de una persona pueden causar que las células de la tiroides se vuelvan cancerosas. El ADN es el químico de cada una de nuestras células que conforma nuestros genes (las instrucciones sobre cómo funcionan nuestras células). Por lo general, nos asemejamos a nuestros padres porque de ellos proviene nuestro ADN. Sin embargo, el ADN afecta algo más que solo nuestra apariencia. También puede influir nuestro riesgo de padecer ciertas enfermedades, como lo son algunos tipos de cáncer.`,
-    recomendaciones: `Consulte a su medico lo más pronto posible`,
+    recomendaciones: `El tratamiento para el cáncer de tiroides podría incluir: 
+    Cirugía para el cáncer de tiroides 
+    Terapia con yodo radiactivo (radioyodo) para el cáncer de tiroides 
+    Terapia de hormona tiroidea
+    `,
     sintomasArray: [0, 0, 0, 0, 0, 0.8, 0, 0, 0, 0, 0, 0.8, 0, 0.8, 0, 0.8]
 }
 
@@ -73,7 +99,11 @@ var C10 = {
     causa: `Los cánceres de laringe que se forman en las cuerdas vocales (glotis) a menudo causan ronquera o un cambio en la voz, lo que puede conducir a que estos cánceres sean encontrados en etapas muy iniciales. Las personas que presentan cambios en la voz (como ronquera) que no se alivia dentro de 2 semanas deben consultar inmediatamente a su médico.
 
     Para los cánceres que no se han originado en las cuerdas vocales, la ronquera sólo ocurre después que estos cánceres alcanzan una etapa más avanzada o se han propagado a las cuerdas vocales. A veces, estos cánceres no se descubren hasta que se han propagado hasta los ganglios linfáticos y la persona nota una masa que crece en su cuello.`,
-    recomendaciones: `Consulte a su medico lo más pronto posible`,
+    recomendaciones: `En caso de tener algunos de estos síntomas consulte primero a un médico para confirmar el diagnóstico.
+    Cirugía para los cánceres de laringe e hipofaringe
+    Radioterapia para los cánceres de laringe e hipofaringe
+    Inmunoterapia para los cánceres de laringe e hipofaringe
+    `,
     sintomasArray: [0, 0, 0, 0, 0.6, 1, 0, 0, 0, 0, 0, 0.6, 0, 1, 0, 1]
 }
 
@@ -110,7 +140,7 @@ function diagnosticoEspecifico(data, uillness) {
     }
 
     respuesta = {
-        illness0: arregloEnfermedades[uillness[i]-1],
+        illness0: arregloEnfermedades[uillness[i]],
     }
     return respuesta;
 }
