@@ -82,41 +82,78 @@ const C10 = {
 const arregloEnfermedades = [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10];
 var sintomasUsuario = localStorage.getItem('calif_sintomas');
 console.log(sintomasUsuario)
-const umbral = 0.4;
+const umbral = 0.3;
 
 // Método max-min para obtener el índice del arreglo de enfermedades
-function diagnosticoEspecifico(data, sintomasUsuario) {
+function diagnosticoEspecifico(data, canceresSeleccionados) {
     let [aux, res] = [[], []];
-    let answer = {};
+    let respuesta = {};
 
-    for (let i = 0; i < sintomasUsuario.length; i++) {
-        for (let j = 0; j < 16; j++) {
-            const posicion = parseInt(sintomasUsuario[i]) - 1;
-            aux[j] = Math.min(data[j], posicarregloEnfermedadesion[posicion].sintomasArray[j]);
+    for (let i = 0; i < canceresSeleccionados.length; i++) {
+        for (let j = 0; j < 15; j++) {
+            const posicion = parseInt(canceresSeleccionados[i]) - 1;
+            aux[j] = Math.min(data[j], arregloEnfermedades[posicion].sintomasArray[j]);
         }
         res[i] = aux;
         aux = [];
     }
 
-    for (let i = 0; i < sintomasUsuario.length; i++) res[i] = parseFloat(res[i].reduce((a, b) => a + b, 0));
+    for (let i = 0; i < canceresSeleccionados.length; i++) res[i] = parseFloat(res[i].reduce((a, b) => a + b, 0));
 
     let i = res.indexOf(Math.max.apply(Math, res));
 
     if(res[i] <= umbral){
-        answer[`enfermedad0`] = {
+        respuesta[`enfermedad0`] = {
             name: `¡Felicidades!`,
-            source: `¡Tu diagnostico no coincide con ninguna enfermedad!`,
-            recommendations: `Sigue cuidándote, no olvides consultar a tu médico constantemente.`,
+            causa: `¡Tu diagnostico no coincide con ninguna enfermedad!`,
+            recomendaciones: `Sigue cuidándote, no olvides consultar a tu médico constantemente.`,
             };
 
-        return answer
+        return respuesta
     }
 
-    answer = {
-        enfermedad0: arregloEnfermedades[sintomasUsuario[i]-1],
+    respuesta = {
+        enfermedad0: arregloEnfermedades[canceresSeleccionados[i]-1],
     }
-    return answer;
+    return respuesta;
 }
+
+function diagnosticoGeneral(calif_sintomas){
+    let [resultado, auxiliar, cancerArreglo] = [[], [], []];
+    let [j, contador] = [0,0];
+    let respuesta = {};
+
+    arregloEnfermedades.map((enfermedad) =>{
+        for(let i = 0; i<15; i++) auxiliar[i] = Math.min(calif_sintomas[i], enfermedad.sintomasArray[i]);
+        resultado[j] = auxiliar;
+        auxiliar = [];
+        j++;
+    });
+
+    for(let i = 0; i<10; i++) resultado[i] = parseFloat(resultado[i].reduce((a,b) => a+b, 0));
+
+    let i = resultado.indexOf(Math.max.apply(Math, resultado));
+
+    console.log(resultado);
+    if(resultado[i] <= umbral){
+        respuesta[`enfermedad0`] = {
+        name: `¡Felicidades!`,
+        causa: `¡Tu diagnostico no coincide con ninguna enfermedad!`,
+        recomendaciones: `Sigue cuidándote, no olvides consultar a tu médico constantemente.`,
+        };
+
+    return respuesta
+};
+
+    for(let k = 0; k<10; k++) if(resultado[k] === resultado[i]) cancerArreglo.push(k);
+
+    cancerArreglo.map((index) =>{
+        respuesta[`illness${contador}`] = arregloEnfermedades[index];
+        contador++;
+    });
+        return respuesta;
+}
+
 
 function getCanceresSeleccionados(){
     const arrayCancer = document.getElementsByName("canceres");
