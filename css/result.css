@@ -32,21 +32,23 @@ h2{
     text-align:center;
     margin: 5%;
 }
-.diagnostico{
+.diagnostico {
     margin-left: 16%;
+    font-weight: 300;
     width: 800px;
-    height: 30px;
+    height: 300px;
 }
 
 .form-container{
 margin: 20px 20px 20px 20px;
 }
 
-.recomendaciones{
+.recomendaciones {
+    font-size: 16px;
+    font-weight: 300;
     margin-left: 15%;
-    margin-top: 10%;
+    margin-top: 22%;
     width: 800px;
-    height: 150px;
 }
 
 .btn-container{
@@ -54,7 +56,6 @@ margin: 20px 20px 20px 20px;
     margin-left: 3.5%;
     width: 90%;
     height: 50px;
-    /* background-color: purple; */
     display: flex;
     justify-content: flex-end;
 }
