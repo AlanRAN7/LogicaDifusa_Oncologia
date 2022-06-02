@@ -87,7 +87,7 @@ function diagnosticoEspecifico(data, uillness) {
     let respuesta = {};
 
     for (let i = 0; i < uillness.length; i++) {
-        for (let j = 0; j < 16; j++) {
+        for (let j = 0; j < 15; j++) {
             var posicion = parseInt(uillness[i])-1;
             aux[j] = Math.min(data[j], arregloEnfermedades[posicion].sintomasArray[j]);
         }
